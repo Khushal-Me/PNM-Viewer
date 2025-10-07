@@ -55,4 +55,7 @@ coverage
 .yarn/build-state.yml
 .yarn/cache
 .pnp.*
-bun.lockb
+
+# Deployment
+.vercel
+.netlify

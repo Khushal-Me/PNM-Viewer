@@ -7,7 +7,6 @@ export interface NetpbmImage {
 }
 
 export function parseNetpbm(content: string | ArrayBuffer): NetpbmImage {
-  let lines: string[];
   let binaryData: Uint8Array | null = null;
   
   // Handle binary or text input
@@ -18,7 +17,7 @@ export function parseNetpbm(content: string | ArrayBuffer): NetpbmImage {
   }
   
   // Split into lines and remove comments
-  lines = content.split('\n').filter(line => !line.trim().startsWith('#'));
+  const lines = content.split('\n').filter(line => !line.trim().startsWith('#'));
   
   const format = lines[0].trim() as NetpbmImage['format'];
   if (!['P1', 'P2', 'P3', 'P4', 'P5', 'P6'].includes(format)) {
