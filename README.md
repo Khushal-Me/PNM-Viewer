@@ -54,43 +54,6 @@ npm run preview
 
 The built files will be in the `dist/` directory.
 
-## Deployment
-
-### Deploy to Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Khushal-Me/PNM-Viewer)
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-```
-
-The included `vercel.json` ensures proper SPA routing.
-
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Khushal-Me/PNM-Viewer)
-
-```bash
-# Install Netlify CLI
-npm i -g netlify-cli
-
-# Build and deploy
-npm run build
-netlify deploy --prod --dir=dist
-```
-
-The included `netlify.toml` and `public/_redirects` ensure proper SPA routing.
-
-### Deploy to Other Platforms
-
-For other hosting platforms (GitHub Pages, AWS S3, etc.), ensure your server is configured to:
-1. Serve `index.html` for all routes (SPA fallback)
-2. Serve files from the `dist/` directory
-3. Set proper cache headers for static assets
 
 ## 🛠️ Tech Stack
 
@@ -167,17 +130,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-**Khushal Mehta**
-
-- GitHub: [@Khushal-Me](https://github.com/Khushal-Me)
-
-## Show Your Support
-
-Give a star if this project helped you!
-
----
-
-<p align="center">Made with React</p>
